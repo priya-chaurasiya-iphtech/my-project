@@ -1,1 +1,63 @@
-<h1>Hello GitHub!</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priya • Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">Priya<span>.</span></div>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Priya</span></h1>
+        <p class="subtitle">Front-End learner crafting clean, simple web pages.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="link" href="#about">About me →</a>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>I enjoy building responsive, accessible UIs using HTML & CSS. This is a demo portfolio page pushed with Git. 😊</p>
+      <ul class="tags"><li>HTML5</li><li>CSS3</li><li>Responsive</li></ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>Landing Page</h3>
+          <p>Simple product landing with hero and CTA.</p>
+          <a class="link" href="#">Preview</a>
+        </article>
+        <article class="project">
+          <h3>Gallery</h3>
+          <p>Responsive image gallery using CSS Grid.</p>
+          <a class="link" href="#">Preview</a>
+        </article>
+        <article class="project">
+          <h3>Portfolio</h3>
+          <p>This page! Clean layout with cards.</p>
+          <a class="link" href="#">Preview</a>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a class="link" href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a class="link" href="https://github.com/priya-chaurasiya-iphtech" target="_blank" rel="noreferrer">priya-chaurasiya-iphtech</a></p>
+    </section>
+  </main>
+  <footer class="container footer">
+    <p>© <span id="year"></span> Priya • Built with HTML & CSS</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
